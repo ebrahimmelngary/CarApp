@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, Pressable, Alert } from 'react-native';
-import type { RouteProp } from '@react-navigation/native';
+import { useRoute, type RouteProp } from '@react-navigation/native';
 
 import styles from './styles';
 import { Car } from '../../types';
@@ -10,7 +10,8 @@ type Props = {
   route: RouteProp<{ params: { car: Car } }, 'params'>;
 };
 
-const CarDetailsScreen: React.FC<Props> = ({ route }) => {
+const CarDetailsScreen: React.FC<Props> = () => {
+  const route = useRoute<RouteProp<{ params: { car: Car } }, 'params'>>();
   const { car } = route.params;
 
   return (
