@@ -5,7 +5,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # CarApp
 
-A small **React Native (Expo) + TypeScript** app demonstrating a feature-based structure, mock async data fetching, a swipable image carousel, navigation to a Product Details screen, and unit tests (Jest + React Native Testing Library).
+A small **React Native (CLI) + TypeScript** app demonstrating a feature-based structure, mock async data fetching, a swipable image carousel, navigation to a Product Details screen, and unit tests (Jest + React Native Testing Library).
 
 ---
 
@@ -87,7 +87,7 @@ npm install
 yarn
 ```
 
-3. Start Metro/Expo:
+3. Start Metro:
 
 ```bash
 npm run start
@@ -114,7 +114,7 @@ npm test
 
 Common scripts included or recommended:
 
-* `npm start` — start expo / Metro bundler
+* `npm start` — start   / Metro bundler
 * `npm run ios` — launch iOS simulator (if configured)
 * `npm run android` — run Android emulator/device
 * `npm test` — run Jest tests
@@ -236,8 +236,8 @@ Feel free to open issues or PRs. Include:
 
   ```bash
   npx react-native start --reset-cache
-  # or for expo
-  expo start -c
+  # or for  
+    start -c
   ```
 * Reinstall iOS pods:
 
